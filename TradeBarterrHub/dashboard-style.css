@@ -1,0 +1,217 @@
+body {
+  background: linear-gradient(135deg, #22f3e9, #622f94);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.gradient-header {
+  background: rgba(0, 0, 0, 0.7); 
+  color: #ffffff;
+  padding: 20px 40px;
+  display:flex;
+  justify-content:space-between; 
+  align-items:center;
+}
+.nav {
+display:contents;
+}
+
+.nav ul {
+list-style: none;
+display: flex;
+align-items: center; /* Vertically center the navigation items */
+}
+
+.nav ul li {
+margin: 0 15px; /* Horizontal spacing between nav items */
+}
+
+.nav ul li a {
+color: white;
+text-decoration: none;
+padding: 5px 10px; /* Padding for clickable area */
+transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.nav li a:hover {
+color: #a8dadc; /* Lighter shade for hover effect */
+}
+
+
+.head-container{
+  color:white;
+  display: block;
+}
+.dashboard{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: flex-start; /* Align content to start */
+padding-top: 40px; /* Add top padding to push content below header */
+width: 100%;
+color:white;
+}
+
+.search-container {
+width: 100%;
+max-width: 400px; /* Adjust based on your preference */
+display: flex;
+justify-content: center;
+}
+
+.search-container form {
+display: flex;
+width: 100%;
+}
+
+.search-container input[type="text"] {
+flex-grow: 1;
+padding: 10px;
+background-color: transparent; /* Make the input field transparent */
+border: 1px solid #ccc; /* You can make this transparent or style as needed */
+border-radius: 5px;
+color: white; /* Adjust text color for visibility against your background */
+}
+
+
+.search-container button {
+padding: 10px 20px;
+background-color:transparent; /* Button background */
+color: white; /* Button text color */
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.search-container button:hover {
+background-color:transparent;
+}
+
+/* Additional styles for the user input section */
+
+.user-input-section {
+margin-top: 2rem;
+padding: 1rem;
+background-color: #fff; /* Or another color based on your design */
+border-radius: 8px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+margin-bottom: 1rem;
+}
+
+.form-group label {
+display: block;
+margin-bottom: 0.5rem;
+}
+
+.form-group input[type="datetime-local"],
+.form-group textarea,
+.form-group input[type="file"] {
+width: 100%;
+padding: 0.5rem;
+border: 1px solid #ccc;
+border-radius: 4px;
+}
+
+.form-group textarea {
+height: 100px; /* Adjust height as needed */
+}
+
+.auction-items-container {
+background-color: linear-gradient(135deg, #006661, #622f94);
+max-width: 40%;
+margin: 0 auto;
+padding: 10px 40px;
+border-radius: 5px;
+}
+
+.auction-item {
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0; /* Remove padding */
+margin: 0; /* Remove margin */
+border: 1px solid #ccc; /* Add border for visual separation if needed */
+border-radius: 8px;
+
+}
+
+.combine-items{
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+gap: 0; 
+padding:50px;
+}
+
+.image-class{
+width: 80%; 
+height: 350px; 
+object-fit:contain;
+object-position:center;
+}
+.item-photo {
+width: 200px; /* Adjust this value to the desired width */
+height: auto;
+}
+
+.item-details h2 {
+width:10px; /* Adjust this value to the desired width */
+height: auto;
+color:white;
+}
+
+.item-details p {
+color: white;
+margin: 5px 0;
+}
+button[type="submit"] {
+padding: 0.5rem 1rem;
+background-color: #007bff;
+color: white;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+
+button[type="submit"]:hover {
+background-color: #0056b3;
+}
+
+.auction-item button {
+background-color: #007bff;
+color: white;
+border: none;
+padding: 4px 20px;
+border-radius: 5px;
+cursor: pointer;
+margin-top: 10px; /* Space from the last detail to the button */
+}
+
+.auction-item button:hover {
+background-color: #0056b3;
+}
+
+.dashboard-footer {
+background-color: rgba(0, 0, 0, 0.7); 
+color: white;
+text-align:right;
+padding: 25px;
+margin-top: auto;
+}
+
+/* Add responsiveness */
+@media (max-width: 768px) {
+.dashboard-sidebar {
+  width: 100%;
+  height: auto;
+  min-height: 0;
+}
+
+.dashboard-main, .dashboard-sidebar {
+  padding: 10px;
+}
+}
